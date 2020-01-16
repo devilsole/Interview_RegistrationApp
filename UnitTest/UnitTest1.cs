@@ -1,12 +1,6 @@
-
-using Newtonsoft.Json;
 using Registration.BAL;
+using Registration.DAL;
 using Registration.Interface;
-using Registration.POCO;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using Xunit;
 
 namespace UnitTest
@@ -14,11 +8,16 @@ namespace UnitTest
     public class UnitTest1
     {
         private IValidation Validation;
+        private IFileGenerator FileGenerator;
+        private IDataSaveService DataSaveService;
 
         public UnitTest1()
         {
 
             Validation = new DataValdation();
+            FileGenerator = new FileGenerator();
+            DataSaveService = new DataSaveService(FileGenerator);
+
 
         }
 
@@ -60,6 +59,17 @@ namespace UnitTest
             Assert.True(Validation.IsValidDate("12-12-1212"));
 
         }
+
+        [Fact]
+        public void ValidationFileName()
+        {
+
+            Assert.Equal(DataSaveService.FilePath("abc"), "c:/people/spouses/abc.txt");
+
+            Assert.Equal(DataSaveService.FilePath(), "c:/main/People.txt");
+
+        }
+
 
 
 
