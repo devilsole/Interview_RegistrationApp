@@ -35,6 +35,7 @@ The console application should capture the following details for registration pu
     o FirstName Validation
     o SurName Validation
     o DateOfBirth Validation
+    o FileName Validation
     
 ## This project is design with keeping the future requirement of the project in mind.
 
