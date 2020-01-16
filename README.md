@@ -2,7 +2,7 @@
 
 # The Startup Project is  *RegistrationAPP*
 
-##UserDetails:
+## UserDetails:
 
 The console application should capture the following details for registration purposes.
 
@@ -18,7 +18,7 @@ The console application should capture the following details for registration pu
 
 * If married, save husband / wife details (same as above) into separate linked file (see sample at the end)
 
-##Business Rules:
+## Business Rules:
 
 
     o If age is less than 18, ask for parent's authorisation (just a Boolean indicating Yes/No "My parents allow registration")
