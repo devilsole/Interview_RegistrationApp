@@ -32,4 +32,9 @@ The console application should capture the following details for registration pu
     o Spouse information can be saved wherever you want, but keep in mind that different people could have the same wife/husband names
 
 ## Unit Test are also applied to this project 
-## This project is design with keeping the future requirement of the project in mind for scaling and migrating. 
+    o FirstName Validation
+    o SurName Validation
+    o DateOfBirth Validation
+    
+## This project is design with keeping the future requirement of the project in mind.
+
